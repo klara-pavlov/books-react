@@ -3,13 +3,16 @@ import '../App.css';
 import Book from './Book';
 import { BookContext } from '../contexts/BookContext';
 
+
+
 function Books() {
    const value = useContext(BookContext);
    let books = value[0];
+   console.log(books);
    return (
       <div className="books">
          {books.map(book => (
-            <Book title={book.title} authors={book.authors} isbn={book.isbn} key={book.isbn} />
+            <Book book={book} key={book.id} />
          ))}
       </div>
    )

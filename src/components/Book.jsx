@@ -3,15 +3,20 @@ import '../App.css';
 function Book(props) {
  return (
   <div className="bookCard">
-   <button className="favoriteBtn"><i className="far fa-heart"></i></button>
-   <img src="https://via.placeholder.com/300x300" alt="jsx-a11y/alt-text" />
-   <div className="bookCardContent">
-    <h2>{props.title}</h2>
-    <h4>{[props.authors]}</h4>
-    <h6>{props.isbn}</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod tempore quia.</p>
-
+   <div className="imgHolder">
+    <img src={props.book.volumeInfo.imageLinks === undefined
+     ? "https://via.placeholder.com/120"
+     : props.book.volumeInfo.imageLinks.thumbnail}
+     alt="img" />
    </div>
+   <div className="bookCardContent">
+    <h2>{props.book.volumeInfo.title}</h2>
+    <h4>{[props.book.volumeInfo.authors]}</h4>
+    <p>{props.book.searchInfo === undefined
+     ? ""
+     : props.book.searchInfo.textSnippet}</p>
+   </div>
+   <button className="favoriteBtn"><i className="far fa-heart"></i></button>
   </div>
  )
 }
