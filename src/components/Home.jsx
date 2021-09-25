@@ -1,16 +1,17 @@
 import React, { useContext } from 'react'
 import Books from './Books'
-import { BookContext } from '../contexts/BookContext';
+import { BookContext } from '../contexts/BookContext'
 function Home() {
-    //const value = useContext(BookContext);
-    //let books = value[0];
-    //let booksLength = books.lenght;
-
+    const { books, favorites, localStorage } = useContext(BookContext);
+    console.log("Favorites right before adding to local storage:", favorites);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    console.log("Local storage:", localStorage.favorites);
     return (
         <div className="homePage">
-            <h2>Books ()</h2>
-            <p>This is home page with all the books.</p>
-            <Books />
+            <section className="titleSection">
+                <h2>Home</h2>
+                <p>This is home page with all the <b>React.js books</b>. Feel free to bookmark favorite books. :) </p></section>
+            <Books books={books} />
         </div>
     )
 }

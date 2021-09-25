@@ -7,9 +7,7 @@ import { BookContext } from '../contexts/BookContext';
 
 function NavBar() {
 
-  //const value = useContext(BookContext);
-  //let books = value[0];
-  //let booksLength = books.length;
+  const { books, favorites } = useContext(BookContext);
   const handleOpenClose = (e) => {
 
     let x = document.getElementById("myNavBar");
@@ -26,8 +24,8 @@ function NavBar() {
 
       <nav>
         <ul className="navbar" id="myNavBar">
-          <li><Link to="/">Books ()</Link></li>
-          <li><Link to="/favorites">Favorites()</Link></li>
+          <li><Link to="/">Home ({books.length})</Link></li>
+          <li><Link to="/favorites">Favorites({favorites.length})</Link></li>
           <li className="menuIcon">
             <a href="#menu" onClick={handleOpenClose}>
               <i className="fas fa-ellipsis-v"></i>
