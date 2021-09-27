@@ -44,8 +44,10 @@ Make your application **responsive** across all screens.
 ### Built with
 
 - React.js
-- CSS Grid
+- Context API
 - Google Books API: [Just React.js books on Google Books API](https://www.googleapis.com/books/v1/volumes?q=react&maxResults=40)
+- CSS Grid
+
 
 ## Author
 
