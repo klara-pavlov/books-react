@@ -18,10 +18,9 @@ function Book(props) {
       <div className="bookCardContent">
         <h2>{props.book.volumeInfo.title}</h2>
         <h4>{[props.book.volumeInfo.authors]}</h4>
-        <p className="smallSubheading">{props.book.id}</p>
-        <p>{props.book.searchInfo === undefined
+        {/*<p>{props.book.searchInfo === undefined
           ? ""
-          : props.book.searchInfo.textSnippet}</p>
+        : props.book.searchInfo.textSnippet}</p>*/}
       </div>
       {/* */}
       <button className="favoriteBtn" onClick={handleAddToFavorites}><i className={JSON.parse(localStorage.favorites).indexOf(props.id) > -1 ? "fas fa-heart" : "far fa-heart"}></i></button>

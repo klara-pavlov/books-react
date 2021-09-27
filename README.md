@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# React Books App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [task](#task).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Objectives](#objectives)
+  - [Task](#task)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Objectives
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Consume a web service
+- Create a responsive UI
+- Create multiple pages and work with routing
+- Use local storage and work with app state
 
-### `npm test`
+### Task
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The task is to create a two-screen application listing items from the API of my choice.
+The application should include the functionality for adding items to “favorites”.
 
-### `npm run build`
+**First screen** should consist of **all items displayed** in a form of a list or a grid (or anything that works for displaying multiple items). From this screen, users should be able to add items to a list of their favorite items, as well as remove them from the favorites list. Each item should also somehow indicate whether it is already saved to favorites or not.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**The second screen** will be a list of all items marked as **favorites**, and should include the functionality for removing the items from favorites.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use **one of free** [REST APIs](https://github.com/public-apis/public-apis) or [GraphQL APIs](https://www.apollographql.com/blog/community/backend/8-free-to-use-graphql-apis-for-your-projects-and-demos/) to **get the data** for your application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make your application **responsive** across all screens.
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Solution URL: [https://github.com/klara-pavlov/books-react](https://github.com/klara-pavlov/books-react)
+- Live Site URL: [https://react-books-klara-pavlov-2021.netlify.app/](https://react-books-klara-pavlov-2021.netlify.app/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built with
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React.js
+- CSS Grid
+- Google Books API: [Just React.js books on Google Books API](https://www.googleapis.com/books/v1/volumes?q=react&maxResults=40)
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@klara-pavlov](https://www.frontendmentor.io/profile/klara-pavlov)
+- GitHub - [@klara-pavlov](https://github.com/klara-pavlov)
+- LinkedIn - [@klara-pavlov](https://www.linkedin.com/in/klara-pavlov/)
+- Instagram - [@klara.pavlov](https://www.instagram.com/klara.pavlov/)

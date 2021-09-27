@@ -20,7 +20,7 @@ function NavBar() {
   }
 
   return (
-    <div className="app-header_navbar">
+    <div className="navbarWrapper">
 
       <nav>
         <ul className="navbar" id="myNavBar">

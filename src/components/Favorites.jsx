@@ -4,7 +4,7 @@ import Books from './Books'
 import { BookContext } from '../contexts/BookContext';
 function Favorites() {
 
-    const { books, localStorage, favorites } = useContext(BookContext);
+    const { books, localStorage, favorites, errMessage } = useContext(BookContext);
     let favoriteBooks = [];
     if (localStorage.favorites) {
         favoriteBooks = books.filter(item => localStorage.favorites.indexOf(item.id) !== -1);
@@ -19,6 +19,9 @@ function Favorites() {
                 <h2>Favorites</h2>
                 <p>Favorites page displays all books added to favorites.</p></section>
             <Books books={favoriteBooks} />
+            <section className="errorMsgSection">
+                <h1>{errMessage}</h1>
+            </section>
         </div>
     )
 }
